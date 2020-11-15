@@ -96,5 +96,13 @@ public class VarastoTest {
         assertEquals(10, varasto.paljonkoMahtuu(), vertailuTarkkuus);
     }
 
+    @Test
+    public void lisaysNegatiivinen() {
+        varasto.lisaaVarastoon(20);
+
+        // vapaata tilaa pitäisi vielä olla tilavuus-lisättävä määrä eli 2
+        assertEquals(10, varasto.getTilavuus(), vertailuTarkkuus);
+    }
+
 
 }
