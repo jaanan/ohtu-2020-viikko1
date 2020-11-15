@@ -112,5 +112,10 @@ public class VarastoTest {
     //    assertEquals("saldo = 0, vielä tilaa 10");
     }
 
+    @Test
+    public void otetaanEiMitaan() {
+        varasto.otaVarastosta(0);
+    }
+
 
 }
