@@ -97,7 +97,7 @@ public class VarastoTest {
     }
 
     @Test
-    public void lisaysNegatiivinen() {
+    public void lisaysLiikaa() {
         varasto.lisaaVarastoon(20);
 
         // vapaata tilaa pitäisi vielä olla tilavuus-lisättävä määrä eli 2
