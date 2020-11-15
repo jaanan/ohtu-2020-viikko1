@@ -104,5 +104,13 @@ public class VarastoTest {
         assertEquals(10, varasto.getTilavuus(), vertailuTarkkuus);
     }
 
+    @Test
+    public void teksti() {
+        varasto.toString();
+
+        // vapaata tilaa pitäisi vielä olla tilavuus-lisättävä määrä eli 2
+        assertEquals("saldo = 0, vielä tilaa 10");
+    }
+
 
 }
