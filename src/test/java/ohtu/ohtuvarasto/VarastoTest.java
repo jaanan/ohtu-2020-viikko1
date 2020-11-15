@@ -114,7 +114,7 @@ public class VarastoTest {
 
     @Test
     public void otetaanEiMitaan() {
-        varasto.otaVarastosta(0);
+        varasto.otaVarastosta(-1);
     }
 
 
