@@ -113,7 +113,7 @@ public class VarastoTest {
     }
 
     @Test
-    public void otetaanEiMitaan() {
+    public void otetaanLiikaa() {
         varasto.otaVarastosta(-1);
     }
 
