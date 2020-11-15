@@ -29,7 +29,7 @@ public class VarastoTest {
 
     @Before
     public void setUpKaks() {
-        varasto = new Varasto(10);
+        varasto = new Varasto(10, 0);
     }
 
     @Before
