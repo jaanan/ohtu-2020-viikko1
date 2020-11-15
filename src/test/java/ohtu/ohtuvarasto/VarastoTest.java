@@ -28,7 +28,7 @@ public class VarastoTest {
     }
 
     @Test
-    public void konstruktoriLuoNollaVaraston() {
+    public void enemmanSaldoaKuinTilaa() {
         varasto = new Varasto(0, 10);
         assertEquals(0, varasto.getSaldo(), vertailuTarkkuus);
     }
