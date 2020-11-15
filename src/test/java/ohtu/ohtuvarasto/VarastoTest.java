@@ -15,16 +15,21 @@ public class VarastoTest {
     Varasto varasto;
     double vertailuTarkkuus = 0.0001;
 
-    @Test
-    public void konstruktoriKaksLuoTyhjanVaraston() {
-        varasto = new Varasto(10, 0);
-        assertEquals(0, varasto.getSaldo(), vertailuTarkkuus);
-    }
+   // @Test
+    // public void konstruktoriKaksLuoTyhjanVaraston() {
+      //  varasto = new Varasto(10, 0);
+        //assertEquals(0, varasto.getSaldo(), vertailuTarkkuus);
+    //}
 
-    @Test
-    public void konstruktoriLuoNollaVaraston() {
-        varasto = new Varasto(0);
-        assertEquals(0, varasto.getSaldo(), vertailuTarkkuus);
+    // @Test
+    // public void konstruktoriLuoNollaVaraston() {
+     //   varasto = new Varasto(0);
+     //   assertEquals(0, varasto.getSaldo(), vertailuTarkkuus);
+    // }
+
+    @Before
+    public void setUpKaks() {
+        varasto = new Varasto(10);
     }
 
     @Before
