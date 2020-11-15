@@ -29,7 +29,7 @@ public class VarastoTest {
 
     @Test
     public void konstruktoriLuoNollaVaraston() {
-        varasto = new Varasto(0,10);
+        varasto = new Varasto(0, 10);
         assertEquals(0, varasto.getSaldo(), vertailuTarkkuus);
     }
 
