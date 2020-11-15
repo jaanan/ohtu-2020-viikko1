@@ -117,5 +117,13 @@ public class VarastoTest {
         varasto.otaVarastosta(-1);
     }
 
+    @Test
+    public void lisaysLiikaa() {
+        varasto.otaVarastosta(20);
+
+        // vapaata tilaa pitäisi vielä olla tilavuus-lisättävä määrä eli 2
+        assertEquals(0, varasto.getSaldo(), vertailuTarkkuus);
+    }
+
 
 }
