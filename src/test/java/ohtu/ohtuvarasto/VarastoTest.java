@@ -88,4 +88,13 @@ public class VarastoTest {
         assertEquals(4, varasto.paljonkoMahtuu(), vertailuTarkkuus);
     }
 
+    @Test
+    public void lisaysNegatiivinen() {
+        varasto.lisaaVarastoon(-1);
+
+        // vapaata tilaa pitäisi vielä olla tilavuus-lisättävä määrä eli 2
+        assertEquals(10, varasto.paljonkoMahtuu(), vertailuTarkkuus);
+    }
+
+
 }
